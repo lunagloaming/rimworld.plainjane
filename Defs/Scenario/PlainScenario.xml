@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ScenarioDef>
+        <defName>Plain_Scenario</defName>
+        <label>Plain Brutality</label>
+        <description>In a World... In a Land... In a Time... One Man... In an Outpost... On the edge of Space... A Girl... Two Girls... Now... More than Ever...</description>
+        <scenario>
+            <summary>One reletively plain pawn vs. the world.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlainColony</factionDef>
+            </playerFaction>
+            <parts>
+
+                <!-- Config pages -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>1</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                    <visible>false</visible>
+                </li>
+
+                <!-- Player pawns modifiers -->
+                <li Class="ScenPart_ForcedHediff">
+                    <def>ForcedHediff</def>
+                    <context>PlayerStarter</context>
+                    <chance>1.0</chance>
+                    <hediff>CryptosleepSickness</hediff>
+                    <hideOffMap>true</hideOffMap>
+                    <severityRange>1~1</severityRange>
+                    <visible>false</visible>
+                </li>
+
+                <!-- Player starting things -->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>100</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>4</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>4</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gun_Revolver</thingDef>
+                </li>
+
+                <!-- Player starting animals -->
+                <li Class="ScenPart_StartingAnimal">
+                    <def>StartingAnimal</def>
+                    <animalKind>Cat</animalKind>
+                    <count>1</count>
+                    <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+                </li>
+
+                <!-- Map starting things -->
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>Steel</thingDef>
+                    <count>720</count>
+                    <visible>false</visible>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>

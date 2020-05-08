@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AlienRace.BackstoryDef>
+        <defName>AverageAdulthood</defName>
+        <title>Plain</title>
+        <titleShort>plain</titleShort>
+        <baseDescription>{PAWN_labelShort} went to a community college, majored in Liberal Arts, and graduated with unremarkable grades around the middle of {PAWN_possessive} class.</baseDescription>
+
+        <slot>Adulthood</slot>
+
+        <spawnCategories>
+            <li>Offworld</li>
+            <li>PlainBackstory</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>AverageTribalAdulthood</defName>
+        <title>Plain</title>
+        <titleShort>plain</titleShort>
+        <baseDescription>{PAWN_labelShort} did not discover fire nor invent the wheel.  {PAWN_labelShort} hunts.  {PAWN_labelShort} gathers.  {PAWN_pronoun} eats and sleeps.  Occasionally, {PAWN_labelShort} tries to make more mouths to feed.</baseDescription>
+
+        <slot>Adulthood</slot>
+
+        <spawnCategories>
+            <li>Tribal</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+</Defs>

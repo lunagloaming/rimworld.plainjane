@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>lunagloaming.PlainJane</packageId>
+
+  <name>Plain Jane Lane</name>
+
+  <author>Luna Gloaming</author>
+
+  <url>https://github.com/lunagloaming/rimworld.plainjane</url>
+
+  <supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
+
+  <description>
+    This mod adds a childhood and adult backstory for an average person.
+    They get no skill modifications.  They are incapable of nothing.
+    They are utterly average.
+
+    There is a scenario too, to get you started.
+    Unlike Jane, the scenario is only slightly easier than Naked Brutality.
+    It is called Plain Brutality.
+  </description>
+
+	<modDependencies>
+      <li>
+        <!-- Include Harmony because HAR2.0 forgot it. -->
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+		<li>
+			<packageId>erdelf.HumanoidAlienRaces</packageId>
+			<displayName>Humanoid Alien Races 2.0</displayName>
+			<steamWorkshopUrl>steam://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+			<downloadUrl>https://github.com/RimWorld-CCL-Reborn/AlienRaces/releases</downloadUrl>
+		</li>
+	</modDependencies>
+
+  <loadAfter>
+    <li>Ludeon.Rimworld</li>
+    <li>Ludeon.Rimworld.Royalty</li>
+	  <li>erdelf.HumanoidAlienRaces</li>
+	</loadAfter>
+
+</ModMetaData>

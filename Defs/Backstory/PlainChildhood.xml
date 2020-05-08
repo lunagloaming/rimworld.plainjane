@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AlienRace.BackstoryDef>
+        <defName>PlainChildhood</defName>
+        <title>Plain</title>
+        <titleShort>plain</titleShort>
+        <baseDescription>{PAWN_labelShort} went to public school away from the rich-kids, but not the popular ones.  {PAWN_pronoun} did not participate in any clubs or activities.  {PAWN_pronoun} graduated high school with mediocre grades near the middle third of {PAWN_possessive} class.</baseDescription>
+
+        <slot>Childhood</slot>
+
+        <spawnCategories>
+            <li>Offworld</li>
+            <li>PlainBackstory</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>PlainTribalChildhood</defName>
+        <title>Plain</title>
+        <titleShort>plain</titleShort>
+        <baseDescription>{PAWN_labelShort} was just another mouth to feed.</baseDescription>
+
+        <slot>Childhood</slot>
+
+        <spawnCategories>
+            <li>Tribal</li>
+            <li>PlainTribalBackstory</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+</Defs>
